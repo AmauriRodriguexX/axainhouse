@@ -98,40 +98,40 @@ h3 {
     margin-right: 6px;
 }
 
+
 .cotiza-section {
-    overflow: hidden;
-    position: relative;
-    height: 592px;
-    display: flex;
-}
-
-.cotiza-section img {
-    object-fit: cover;
-    z-index: 1;
-    
-}
-
-.cotiza-section .container {
-    z-index: 2;
-    position: relative;
-}
-
-.cotiza-section h2,
-.cotiza-section p {
-    color: #fff;
-}
-
-@media (max-width: 767px) {
+    background-color: #fff;
+  }
+  
+  @media (min-width: 768px) {
     .cotiza-section {
-        background-color: #fff;
-        text-align: center;
+      background: url('../assets/resources/cotiza-tu-seguro-de-auto.jpg') no-repeat center center;
+      background-size: cover;
+      color: white;
     }
-
-    .cotiza-section h2 {
-        color: #000095;
+  }
+  
+  @media (max-width: 767px) {
+    .cotiza-section::after {
+      content: "";
+      display: block;
+      background: url('../assets/resources/cotiza-tu-seguro-de-auto.jpg') no-repeat center center;
+      background-size: cover;
+      height: 200px;
+      margin-top: 20px;
     }
-
+  
+    .cotiza-section h1 {
+      color: #000095;
+    }
+  
     .cotiza-section p {
-        color: #000;
+      color: #000;
     }
-}
+  
+    .btn-high {
+      display: inline-block;
+      margin-top: 1rem;
+    }
+  }
+  
