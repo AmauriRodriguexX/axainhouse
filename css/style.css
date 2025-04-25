@@ -1,0 +1,137 @@
+/* === FONT-FACE === */
+@font-face {
+    font-family: 'Publico-Bold';
+    src: url('../assets/fonts/Publico-Bold.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SourceSansPro';
+    src: url('../assets/fonts/SourceSansPro-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SourceSansPro';
+    src: url('../assets/fonts/SourceSansPro-Bold.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* === GLOBAL STYLES === */
+body,
+p,
+span,
+a,
+button,
+.navbar,
+.nav-link,
+label,
+input,
+textarea {
+    font-family: 'SourceSansPro', sans-serif;
+}
+
+/* === TITULARES CON PUBLICO === */
+h1 {
+    font-family: 'Publico-Bold', serif;
+    font-size: 48px;
+    font-weight: 800;
+    margin-bottom: 48px;
+}
+h2,
+h3 {
+    font-family: 'Publico-Bold', serif;
+}
+
+.subtextheder {
+    font-size: 22PX;
+    font-weight: 400;
+    margin-bottom: 48px !important;
+}
+
+
+.btn-call {
+    background-color: #000095;
+    color: #ffffff;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 8px 24px;
+    transition: background-color 0.2s ease;
+}
+
+.btn-call:hover {
+    background-color: #00005B;
+    color: #ffffff;
+}
+
+
+.btn-high {
+    background-color: #000095;
+    color: #ffffff;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 16px;
+    height: 56px;
+    padding: 0 24px; /* solo padding horizontal */
+    display: inline-flex; /* para que el ancho dependa del contenido */
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    transition: background-color 0.2s ease;
+    text-align: center;
+}
+
+
+
+.btn-high:hover {
+    background-color: #00005B;
+    color: #ffffff;
+}
+
+.material-symbols-outlined {
+    vertical-align: middle;
+    font-size: 20px;
+    margin-right: 6px;
+}
+
+.cotiza-section {
+    overflow: hidden;
+    position: relative;
+    height: 592px;
+    display: flex;
+}
+
+.cotiza-section img {
+    object-fit: cover;
+    z-index: 1;
+    
+}
+
+.cotiza-section .container {
+    z-index: 2;
+    position: relative;
+}
+
+.cotiza-section h2,
+.cotiza-section p {
+    color: #fff;
+}
+
+@media (max-width: 767px) {
+    .cotiza-section {
+        background-color: #fff;
+        text-align: center;
+    }
+
+    .cotiza-section h2 {
+        color: #000095;
+    }
+
+    .cotiza-section p {
+        color: #000;
+    }
+}
