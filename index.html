@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Proyecto Bootstrap 5.3</title>
+    <title>AXA Cotizador Seguro Auto</title>
 
     <!-- CSS de Bootstrap 5.3 -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -12,52 +12,206 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="icon" href="https://axa.mx/o/axa-mx-theme/images/favicon.ico" type="image/x-icon">  
+
 
 </head>
 
 <body>
 
     <header>
-        <nav class="navbar bg-white py-2">
-            <div class="container d-flex justify-content-between align-items-center">
-                <a class="navbar-brand" href="#">
-                    <img src="assets/resources/logo-axa.svg" alt="AXA Logo" height="40">
-                </a>
-                <button class="btn btn-call d-flex align-items-center">
-                    <span class="material-symbols-outlined">call</span>
-                    LLÁMANOS
-                </button>
+        <nav class="navbar bg-white py-2 shadow-custom">
+            <div class="container d-flex justify-content-between align-items-center flex-wrap">
+                <!-- Logo CENTRADO en mobile -->
+                <div class="w-100 d-flex justify-content-center d-md-none">
+                    <a class="navbar-brand" href="#">
+                        <img src="assets/resources/logo-axa.svg" alt="AXA Logo" height="40">
+                    </a>
+                </div>
+                <!-- Estructura DESKTOP -->
+                <div class="d-none d-md-flex justify-content-between align-items-center w-100">
+                    <a class="navbar-brand" href="#">
+                        <img src="assets/resources/logo-axa.svg" alt="AXA Logo" height="40">
+                    </a>
+                    <button class="btn btn-call d-flex align-items-center">
+                        <span class="material-symbols-outlined">call</span>
+                        LLÁMANOS
+                    </button>
+                </div>
             </div>
         </nav>
-
     </header>
-
-
 
     <main>
         <section class="cotiza-section position-relative">
-            <div class="container position-relative py-5 d-flex align-items-center flex-column flex-md-row" style="min-height: 500px;">
-              <div class="col-md-6 col-lg-5 text-white text-md-start text-center">
-                <h1 class="fw-bold">Cotiza tu seguro de auto</h1>
-                <p class="mb-4 subtextheder">
-                  Conduce con tranquilidad. Cotiza tu seguro de auto y disfruta de más protección para ti y tu auto:
-                  Daños a terceros SIN deducible, 10% deducible en robo, mismo deducible para cualquier conductor,
-                  cobertura en rotura de cristales y más.
-                </p>
-                <a href="#" class="btn btn-high px-4 py-2">COTIZA AHORA</a>
-              </div>
+            <div
+                class="container position-relative py-5 d-flex align-items-center flex-column flex-md-row desktop-hight">
+                <div class="col-md-6 col-lg-5 text-white text-md-start text-center">
+                    <h1 class="text-header">
+                        Cotiza tu seguro de <span class="d-inline d-md-none"><br></span>auto
+                    </h1>
+                    <p class="mb-4 text-subtitle">
+                        Conduce con tranquilidad. Cotiza tu seguro de auto y disfruta de más protección para ti y tu
+                        auto:
+                        Daños a terceros SIN deducible, 10% deducible en robo, mismo deducible para cualquier conductor,
+                        cobertura en rotura de cristales y más.
+                    </p>
+                    <a href="#" class="btn btn-high px-4 py-2 d-none d-md-inline-flex">COTIZA AHORA</a>
+                </div>
             </div>
-          </section>
-          
-          
+        </section>
+        <section class="benefits-section py-5 mt-3 mb-3">
+            <div class="container">
+                <h2 class="text-benefits">
+                    Beneficios de tu seguro de <span class="d-inline d-md-none"><br></span>auto
+                  </h2>
+                  
+                  
+                <p class="mb-5 text-normal-axa">
+                    Con AXA, tu auto está protegido con coberturas amplias y asistencia
+                    <span class="d-none d-md-inline"><br></span>
+                    siempre que la necesites.
+                  </p>
+                  
+                <!-- Swiper Mobile -->
+                <div class="swiper benefits-swiper d-md-none">
+                    <div class="swiper-wrapper">
 
+                        <!-- Slide 1 -->
+                        <div class="swiper-slide">
+                            <div class="card benefit-card text-center">
+                                <img src="assets/resources/proteccion-total.png" class="mb-3 mx-auto d-block" alt="Protección total" width="80">
+                                <h5 class="text-header-card">Protección total</h5>
+                                <p class="text-card">Coberturas que cuidan de ti y tu auto en todo momento.</p>
+                            </div>
+                        </div>
+
+                        <!-- Slide 2 -->
+                        <div class="swiper-slide">
+                            <div class="card benefit-card text-center">
+                                <img src="assets/resources/asistencia.png" class="mb-3 mx-auto d-block" alt="Protección total" width="80">
+                                <h5 class="text-header-card">Asistencia 24/7</h5>
+                                <p class="text-card">Apoyo inmediato en cualquier emergencia, donde estés.</p>
+                            </div>
+                        </div>
+
+                        <!-- Slide 3 -->
+                        <div class="swiper-slide">
+                            <div class="card benefit-card text-center">
+                                <img src="assets/resources/reparacion-garantizada.png" class="mb-3 mx-auto d-block" alt="Protección total" width="80">
+                                <h5 class="text-header-card">Reparación garantizada</h5>
+                                <p class="text-card">Red de talleres certificados para tu tranquilidad.</p>
+                            </div>
+                        </div>
+
+                        <!-- Slide 4 -->
+                        <div class="swiper-slide">
+                            <div class="card benefit-card text-center">
+                                <img src="assets/resources/asistencia-personalizada.png" class="mb-3 mx-auto d-block" alt="Protección total" width="80">
+                                <h5 class="text-header-card">Atención personalizada</h5>
+                                <p class="text-card">Servicio rápido y eficaz cuando más lo necesitas.</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Controles mobile -->
+                    <div class=" mt-4">
+                        <div class="d-flex justify-content-between">
+                            <div class="d-flex ">
+                                <div class="benefits-controls ">
+                                    <div class="swiper-pagination"></div>
+                                </div>
+                                
+                            </div>
+                            <div class="nav-buttons d-flex gap-2">
+                                <button class="custom-prev">
+                                  <span class="material-symbols-outlined">chevron_left</span>
+                                </button>
+                                <button class="custom-next">
+                                  <span class="material-symbols-outlined">chevron_right</span>
+                                </button>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Grid Desktop -->
+                <div class="row d-none d-md-flex">
+                    <div class="col-md-3">
+                        <div class="card benefit-card text-center">
+                            <img src="assets/resources/proteccion-total.png" class="mb-3 mx-auto d-block" alt="Protección total" width="80">
+                            <h5 class="text-header-card">Protección total</h5>
+                            <p class="text-card">Coberturas que cuidan de ti y tu auto en todo momento.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="card benefit-card text-center">
+                            <img src="assets/resources/asistencia.png" class="mb-3 mx-auto d-block" alt="Protección total" width="80">
+                            <h5 class="text-header-card">Asistencia 24/7</h5>
+                            <p class="text-card">Apoyo inmediato en cualquier emergencia, donde estés.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="card benefit-card text-center">
+                            <img src="assets/resources/reparacion-garantizada.png" class="mb-3 mx-auto d-block" alt="Protección total" width="80">
+                            <h5 class="text-header-card">Reparación garantizada</h5>
+                            <p class="text-card">Red de talleres certificados para tu tranquilidad.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="card benefit-card text-center">
+                            <img src="assets/resources/asistencia-personalizada.png" class="mb-3 mx-auto d-block" alt="Protección total" width="80">
+                            <h5 class="text-header-card">Atención personalizada</h5>
+                            <p class="text-card">Servicio rápido y eficaz cuando más lo necesitas.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
     </main>
+
+
+    <!-- Contenedor fijo inferior con el botón -->
+    <div class="bottom-navigation">
+        <a href="tel:5551693074">
+            <a href="#" class="btn btn-high px-4 py-2">COTIZA AHORA</a>
+        </a>
+    </div>
 
 
 
     <!-- JS de Bootstrap 5.3 (Popper incluido) -->
     <script src="js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 
+    <script>
+        const swiper = new Swiper('.benefits-swiper', {
+          slidesPerView: 1.2,
+          spaceBetween: 16,
+          pagination: {
+            el: '.swiper-pagination',
+            clickable: true
+          },
+          navigation: {
+            nextEl: '.custom-next',   // 👈 actualizado
+            prevEl: '.custom-prev'    // 👈 actualizado
+          },
+          breakpoints: {
+            768: {
+              slidesPerView: 2
+            },
+            992: {
+              slidesPerView: 4
+            }
+          }
+        });
+      </script>
+      
 </body>
-
 </html>

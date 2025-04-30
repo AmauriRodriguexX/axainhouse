@@ -1,23 +1,23 @@
 /* === FONT-FACE === */
 @font-face {
-    font-family: 'Publico-Bold';
-    src: url('../assets/fonts/Publico-Bold.woff2') format('woff2');
-    font-weight: bold;
-    font-style: normal;
+  font-family: 'Publico-Bold';
+  src: url('../assets/fonts/Publico-Bold.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'SourceSansPro';
-    src: url('../assets/fonts/SourceSansPro-Regular.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'SourceSansPro';
+  src: url('../assets/fonts/SourceSansPro-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'SourceSansPro';
-    src: url('../assets/fonts/SourceSansPro-Bold.woff2') format('woff2');
-    font-weight: bold;
-    font-style: normal;
+  font-family: 'SourceSansPro';
+  src: url('../assets/fonts/SourceSansPro-Bold.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
 }
 
 /* === GLOBAL STYLES === */
@@ -31,107 +31,347 @@ button,
 label,
 input,
 textarea {
-    font-family: 'SourceSansPro', sans-serif;
+  font-family: 'SourceSansPro', sans-serif;
+}
+main {
+  margin-bottom: 132px;
 }
 
 /* === TITULARES CON PUBLICO === */
 h1 {
-    font-family: 'Publico-Bold', serif;
-    font-size: 48px;
-    font-weight: 800;
-    margin-bottom: 48px;
-}
-h2,
-h3 {
-    font-family: 'Publico-Bold', serif;
+  font-family: 'Publico-Bold', serif;
+  font-size: 48px;
+  font-weight: 800;
+  margin-bottom: 48px;
 }
 
+
+@media (max-width: 767px) {
+  h1 {
+    margin-bottom: 24px;
+  }
+}
+
+h2,
+h3 {
+  font-family: 'Publico-Bold', serif;
+}
+
+.text-header-card {
+  font-size: 18px;
+  font-weight: 600;
+  color: #000095;
+  font-family: 'SourceSansPro', sans-serif;
+  
+}
+
+.text-card {
+  font-size: 16px;
+  font-weight: 400;
+  color: #333333;
+  line-height: 28px;
+  font-family: 'SourceSansPro', sans-serif;
+}
+
+.text-normal-axa {
+  font-size: 18px;
+  font-weight: 400;
+  color: #252A2D;
+  line-height: 28px;
+  font-family: 'SourceSansPro', sans-serif;
+  text-align: center;
+}
+
+.text-benefits {
+  font-size: 32px;
+  font-weight: 800;
+  color: #333333;
+  line-height: 42px;
+  font-family: 'Publico-Bold', serif;
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+
+
+@media (max-width: 767px) {
+  .text-benefits {
+    font-size: 24px;
+    font-weight: 800;
+    color: #333333;
+    line-height: 36px;
+    font-family: 'Publico-Bold', serif;
+    text-align: left;
+    margin-bottom: 24px;
+  }
+}
+
+
+@media (max-width: 767px) {
+  .text-normal-axa {
+    text-align: left;
+  }
+}
+
+
+
+
+nav.shadow-custom {
+  display: block;
+  width: 100%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1) !important;
+  z-index: 10;
+}
+
+
+
+
 .subtextheder {
-    font-size: 22PX;
-    font-weight: 400;
-    margin-bottom: 48px !important;
+  font-size: 22PX;
+  font-weight: 400;
+  margin-bottom: 48px !important;
 }
 
 
 .btn-call {
-    background-color: #000095;
-    color: #ffffff;
-    border-radius: 8px;
-    font-weight: 600;
-    font-size: 16px;
-    padding: 8px 24px;
-    transition: background-color 0.2s ease;
+  background-color: #000095;
+  color: #ffffff;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 8px 24px;
+  transition: background-color 0.2s ease;
 }
 
 .btn-call:hover {
-    background-color: #00005B;
-    color: #ffffff;
+  background-color: #00005B;
+  color: #ffffff;
 }
 
 
 .btn-high {
-    background-color: #000095;
-    color: #ffffff;
-    border-radius: 8px;
-    font-weight: 600;
-    font-size: 16px;
-    height: 56px;
-    padding: 0 24px; /* solo padding horizontal */
-    display: inline-flex; /* para que el ancho dependa del contenido */
-    align-items: center;
-    justify-content: center;
-    line-height: 1;
-    transition: background-color 0.2s ease;
-    text-align: center;
+  background-color: #000095;
+  color: #ffffff;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 16px;
+  min-height: 56px;
+  padding: 12px 24px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.2;
+  transition: background-color 0.2s ease;
+  text-align: center;
+  text-wrap: balance;
+  /* opcional si quieres que el texto no se parta feo */
 }
+
+/* Mobile: ocupar todo el ancho */
+@media (max-width: 600px) {
+  .btn-high {
+    width: 100%;
+  }
+}
+
 
 
 
 .btn-high:hover {
-    background-color: #00005B;
-    color: #ffffff;
+  background-color: #00005B;
+  color: #ffffff;
 }
 
 .material-symbols-outlined {
-    vertical-align: middle;
-    font-size: 20px;
-    margin-right: 6px;
+  vertical-align: middle;
+  font-size: 20px;
+  margin-right: 6px;
 }
 
 
 .cotiza-section {
-    background-color: #fff;
+  background-color: #fff;
+}
+
+@media (min-width: 768px) {
+  .cotiza-section {
+    background: url('../assets/resources/cotiza-tu-seguro-de-auto.jpg') no-repeat center center;
+    background-size: cover;
+    color: white;
   }
-  
-  @media (min-width: 768px) {
-    .cotiza-section {
-      background: url('../assets/resources/cotiza-tu-seguro-de-auto.jpg') no-repeat center center;
-      background-size: cover;
-      color: white;
-    }
+}
+
+@media (max-width: 767px) {
+  .cotiza-section::after {
+    content: "";
+    display: block;
+    background: url('../assets/resources/cotiza-tu-seguro-de-auto-mobile.jpg') no-repeat center center;
+    background-size: cover;
+    height: 200px;
+    margin-top: 20px;
   }
-  
-  @media (max-width: 767px) {
-    .cotiza-section::after {
-      content: "";
-      display: block;
-      background: url('../assets/resources/cotiza-tu-seguro-de-auto.jpg') no-repeat center center;
-      background-size: cover;
-      height: 200px;
-      margin-top: 20px;
-    }
-  
-    .cotiza-section h1 {
-      color: #000095;
-    }
-  
-    .cotiza-section p {
-      color: #000;
-    }
-  
-    .btn-high {
-      display: inline-block;
-      margin-top: 1rem;
-    }
+
+  .cotiza-section h1 {
+    color: #000095;
   }
+
+  .cotiza-section p {
+    color: #000;
+  }
+}
+
+@media (min-width: 1024px) {
+  .desktop-hight {
+    min-height: 500px;
+  }
+}
+
+
+@media (max-width: 600px) {
+  .py-5 {
+    padding-bottom: 0rem !important;
+  }
+}
+
+
+
+.text-header {
+  font-size: 32px;
+  font-weight: 800;
+  color: #ffffff;
+  text-align: left;
+}
+
+.text-subtitle {
+  font-size: 22px;
+  font-weight: 300;
+  color: #ffffff;
+  text-align: left;
   
+}
+
+@media (max-width: 600px) {
+  .text-subtitle {
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 24px !important;
+    color: #ffffff;
+    text-align: left;
+  }
+}
+
+
+.bottom-navigation {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
+  background-color: #ffffff;
+  box-shadow: 0px -4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 16px;
+  padding-right: 16px;
+  z-index: 1000;
+}
+
+
+.benefit-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+.benefits-controls {
+  background-color: #E2DFDF;
+  border-radius: 30px;
+  padding: 16px;
+  width: 87px;
+}
+
+.swiper-pagination-bullet {
+  background:#5E6A71 !important;
+  opacity: 1 !important;
+}
+
+.swiper-pagination {
+  display: flex;
+  align-items: space-between !important;
+}
+
+
+
+.swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+  background: #888;
+  opacity: 1;
+  border-radius: 50%;
+}
+
+.swiper-pagination-bullet-active {
+  background: #000;
+}
+
+.swiper-pagination-bullet-active {
+  background: #000095!important;
+  width: 16px !important;
+  height: 8px !important;
+  border-radius: 20px !important;
+}
+
+.swiper-pagination {
+  position: absolute;
+  text-align: center;
+  padding-left: 7px;
+  padding-bottom: 7px;
+  transition: .3s opacity;
+  transform: translate3d(0, 0, 0);
+  z-index: 10;
+}
+
+
+
+
+.nav-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.custom-prev,
+.custom-next {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border: none;
+  cursor: pointer;
+}
+
+.custom-prev {
+  background-color: #E2DFDF;
+  color: #4a4a4a;
+}
+
+.custom-next {
+  background-color: #000095;
+  color: #fff;
+}
+
+
+.custom-prev,
+.custom-next .material-symbols-outlined  {
+  padding-left: 10px;
+}
+
+
+.swiper-pagination {
+  pointer-events: auto;
+  z-index: 0;
+  width: auto !important;
+}
