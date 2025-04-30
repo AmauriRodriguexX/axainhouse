@@ -41,6 +41,9 @@ h1 {
   margin-bottom: 48px;
 }
 
+main {
+  margin-bottom: 82px;
+}
 
 @media (max-width: 767px) {
   h1 {
@@ -92,7 +95,7 @@ h3 {
 
 @media (max-width: 767px) {
   .text-benefits {
-    font-size: 24px;
+    font-size: 28px;
     font-weight: 800;
     color: #333333;
     line-height: 36px;
@@ -149,7 +152,7 @@ nav.shadow-custom {
   background-color: #000095;
   color: #ffffff;
   border-radius: 8px;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 16px;
   min-height: 56px;
   padding: 12px 24px;
@@ -203,7 +206,7 @@ nav.shadow-custom {
     display: block;
     background: url('../assets/resources/cotiza-tu-seguro-de-auto-mobile.jpg') no-repeat center center;
     background-size: cover;
-    height: 200px;
+    height: 290px;
     margin-top: 20px;
   }
 
@@ -232,7 +235,7 @@ nav.shadow-custom {
 
 
 .text-header {
-  font-size: 32px;
+  font-size: 36px;
   font-weight: 800;
   color: #ffffff;
   text-align: left;
@@ -367,11 +370,6 @@ nav.shadow-custom {
   width: auto !important;
 }
 
-
-.section-easy {
-  background-color: #fff;
-  border-top: 8px solid #F6F6F6;
-}
 
 .custom-img-shadow {
   border-radius: 16px;
@@ -527,15 +525,23 @@ nav.shadow-custom {
   overflow: hidden;
 }
 
+/* Color distinto en mobile */
+@media (max-width: 767.98px) {
+  .float-button-expand {
+    background-color: #00005B;
+  }
+}
+
 .float-button-expand .material-symbols-outlined {
   font-size: 24px;
   transition: transform 0.2s ease;
-  margin-left: 6px;
+  margin-left: 16px;
 }
 
 /* Ocultamos el texto hasta el hover, y lo mostramos sin interferir */
 .float-button-expand .float-label {
   display: none;
+  margin-right: 16px;
   font-weight: 700;
   margin-left: 8px;
   opacity: 0;
@@ -615,5 +621,7 @@ nav.shadow-custom {
   opacity: 1;
   transform: translateY(0);
   visibility: visible;
+  display: flex !important;
+
   pointer-events: auto;
 }
