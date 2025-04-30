@@ -33,10 +33,6 @@ input,
 textarea {
   font-family: 'SourceSansPro', sans-serif;
 }
-main {
-  margin-bottom: 132px;
-}
-
 /* === TITULARES CON PUBLICO === */
 h1 {
   font-family: 'Publico-Bold', serif;
@@ -300,8 +296,6 @@ nav.shadow-custom {
   align-items: space-between !important;
 }
 
-
-
 .swiper-pagination-bullet {
   width: 8px;
   height: 8px;
@@ -330,9 +324,6 @@ nav.shadow-custom {
   transform: translate3d(0, 0, 0);
   z-index: 10;
 }
-
-
-
 
 .nav-buttons {
   display: flex;
@@ -374,4 +365,255 @@ nav.shadow-custom {
   pointer-events: auto;
   z-index: 0;
   width: auto !important;
+}
+
+
+.section-easy {
+  background-color: #fff;
+  border-top: 8px solid #F6F6F6;
+}
+
+.custom-img-shadow {
+  border-radius: 16px;
+  box-shadow: 0 2px 16px rgba(0, 0, 0, 0.05);
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+
+.testimonial-card {
+  border-radius: 16px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  background: #fff;
+}
+
+.stars {
+  font-size: 24px;
+  color: #000095;
+}
+
+.bg-light {
+  background-color: #EEEEEE !important;
+}
+
+.name-text {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 28px;
+  color: #000095;
+}
+
+/* Forzar mismo alto a todas las tarjetas del slider */
+.testimonial-card {
+  min-height: 250px; /* ajusta según necesites */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+/* Contenedor FAQ: ancho máximo en desktop */
+.accordion-faq {
+  max-width: 685px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* Estilo general del botón del acordeón */
+.accordion-button {
+  background-color: #fff;
+  font-size: 18px !important;
+  font-weight: 600 !important;
+  color: #252A2D;
+  width: 95%;
+  box-shadow: none;
+  padding-right: 2.5rem; /* espacio para el ícono */
+  position: relative;
+}
+
+
+/* Eliminar la flecha por defecto de Bootstrap */
+.accordion-button::after {
+  display: none !important;
+}
+
+/* Ícono personalizado (Material Icons) */
+.rotate-icon {
+  color: #000095;
+  transition: transform 0.3s ease;
+  position: absolute;
+  right: 0rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 24px;
+}
+.accordion-button:focus {
+  z-index: 3;
+  outline: 0;
+  box-shadow: none !important;
+}
+
+/* Rotación del ícono cuando está abierto */
+.accordion-button:not(.collapsed) .rotate-icon {
+  transform: translateY(-50%) rotate(45deg);
+}
+
+/* Remover fondo azul al expandir */
+.accordion-button:not(.collapsed) {
+  background-color: #fff !important;
+  color: #252A2D;
+  box-shadow: none;
+}
+
+/* Estilo del body del acordeón */
+.accordion-body {
+  background-color: #fff;
+  font-size: 15px;
+  color: #333;
+}
+
+/* Enlace personalizado */
+.faq-link {
+  color: #000095;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+/* Opcional: sombra ligera para cada item */
+.accordion-item {
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+
+.footer-legal {
+  background-color: #000095;
+  color: #fff;
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 99px;
+}
+
+.footer-text {
+  margin: 0 auto;
+  font-family: 'SourceSansPro', sans-serif;
+  text-align: left;
+}
+
+.footer-link {
+  color: #fff;
+  text-decoration: underline;
+  font-weight: 700;
+}
+
+
+.float-button-expand {
+  position: fixed;
+  bottom: 120px;
+  right: 24px;
+  background-color: #000095;
+  color: #fff;
+  border-radius: 50%;
+  width: 56px;
+  height: 56px;
+  display: inline-grid;
+  place-items: center;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  z-index: 99999;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+.float-button-expand .material-symbols-outlined {
+  font-size: 24px;
+  transition: transform 0.2s ease;
+  margin-left: 6px;
+}
+
+/* Ocultamos el texto hasta el hover, y lo mostramos sin interferir */
+.float-button-expand .float-label {
+  display: none;
+  font-weight: 700;
+  margin-left: 8px;
+  opacity: 0;
+  white-space: nowrap;
+  transition: opacity 0.2s ease;
+  pointer-events: none;
+}
+
+/* Al hacer hover, expandimos */
+.float-button-expand:hover {
+  width: auto;
+  padding: 0 20px;
+  border-radius: 50px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #00005B;
+}
+
+.float-button-expand:hover .float-label {
+  display: inline;
+  opacity: 1;
+}
+
+.btn-call-fixed {
+  width: 288px;
+}
+
+@media (max-width: 767.98px) {
+  .btn-call-fixed {
+    width: 100%;
+  }
+}
+
+.card {
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  --bs-card-border-color: transparent;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  height: var(--bs-card-height);
+  color: var(--bs-body-color);
+  word-wrap: break-word;
+  background-color: var(--bs-card-bg);
+  background-clip: border-box;
+  border: var(--bs-card-border-width) solid var(--bs-card-border-color);
+  border-radius: 10px
+}
+
+
+@media (min-width: 992px) {
+  .scroll-visible-desktop {
+    display: none;
+  }
+
+  .float-button-expand.show-on-scroll {
+    display: inline-grid !important;
+  }
+
+  .bottom-navigation.show-on-scroll {
+    display: flex !important;
+    justify-content: center;
+  }
+}
+
+
+.scroll-visible-desktop {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.7s cubic-bezier(0.25, 1, 0.5, 1), transform 0.7s cubic-bezier(0.25, 1, 0.5, 1);
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.scroll-visible-desktop.show-on-scroll {
+  opacity: 1;
+  transform: translateY(0);
+  visibility: visible;
+  pointer-events: auto;
 }
