@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>AXA Cotizador Seguro Auto</title>
+
+     <!-- CSS de Bootstrap 5.3 -->
+     <link href="css/bootstrap.min.css" rel="stylesheet">
+     <link href="css/style.css" rel="stylesheet">
+     <link href="css/forms.css" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:FILL@0;1&display=swap"
+          rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+
+     <link rel="icon" href="https://axa.mx/o/axa-mx-theme/images/favicon.ico" type="image/x-icon">
+
+
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+
+     <header>
+          <nav class="navbar bg-white py-2 shadow-custom">
+               <div class="container d-flex justify-content-center align-items-center">
+                    <a href="https://axa.mx/" class="navbar-brand">
+                         <img src="assets/resources/logo-axa.svg" alt="AXA Logo" height="40">
+                    </a>
+               </div>
+          </nav>
+     </header>
+
+
+     <main class="flex-grow-1">
+          <section class="form-step py-5">
+               <div class="container">
+                    <div class="form-wrapper mx-auto">
+                         
+                         <div class="step step-1">
+                              <!-- Título -->
+                              <h2 class="text-form-header mb-2">Cotiza tu seguro</h2>
+                              <p class="date-autos  mb-3 mt-3">Datos del vehículo</p>
+                         
+                              <!-- Progreso -->
+                              <div class="progress-step-wrapper mx-auto">
+                                   <div class="progress mb-2 mt-3" style="height: 6px;">
+                                        <div class="progress-bar" role="progressbar" style="width: 25%; background-color: #000095;">
+                                        </div>
+                                   </div>
+                                   <p class="text-start mb-4 text-step mt-3">Paso 1 de 4</p>
+                              </div>
+                              <hr class="mb-4">
+                              <!-- Descripción -->
+                              <p class="text-forms-p ">
+                                   Cuéntanos sobre tu auto para encontrar la mejor cobertura. Solo toma unos segundos y
+                                   es
+                                   clave para ofrecerte la protección adecuada.
+                              </p>
+                         
+                              <div class="mb-3 small d-flex align-items-center">
+                                   <span class="material-symbols-rounded" style="
+                                                              font-size: 16px;margin-right:8px;
+                                                              color: #5E6A71;
+                                                              font-variation-settings: 'FILL' 1;">info</span>
+                         
+                                   <span class="text-muted">Campos con (*) son obligatorios.</span>
+                              </div>
+                         
+                              <!-- Formulario -->
+                              <form>
+                                   <!-- Tipo de vehículo -->
+                                   <div class="mb-4">
+                                        <div class="form-check form-check-inline">
+                                             <input class="form-check-input" type="radio" name="tipo" id="autoSUV" checked>
+                                             <label class="form-check-label" for="autoSUV">Auto / SUV</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                             <input class="form-check-input" type="radio" name="tipo" id="pickup">
+                                             <label class="form-check-label" for="pickup">Pick Up</label>
+                                        </div>
+                                   </div>
+                         
+                                   <!-- Marca y Año -->
+                                   <div class="row g-3 mb-3">
+                                        <div class="col-md-6">
+                                             <label for="marca" class="form-label">Marca*</label>
+                                             <select class="form-select" id="marca" required>
+                                                  <option selected disabled>Selecciona una marca</option>
+                                                  <option value="nissan">Nissan</option>
+                                                  <option value="chevrolet">Chevrolet</option>
+                                                  <option value="toyota">Toyota</option>
+                                             </select>
+                                        </div>
+                                        <div class="col-md-6">
+                                             <label for="anio" class="form-label">Año*</label>
+                                             <select class="form-select" id="anio" required>
+                                                  <option selected disabled>Selecciona un año</option>
+                                                  <option>2024</option>
+                                                  <option>2023</option>
+                                                  <option>2022</option>
+                                                  <option>2021</option>
+                                             </select>
+                                        </div>
+                                   </div>
+                         
+                                   <!-- Modelo y Versión -->
+                                   <div class="row g-3 mb-4">
+                                        <div class="col-md-6">
+                                             <label for="modelo" class="form-label">Modelo*</label>
+                                             <select class="form-select" id="modelo" required>
+                                                  <option selected disabled>Selecciona un modelo</option>
+                                                  <option value="sentra">Sentra</option>
+                                                  <option value="corolla">Corolla</option>
+                                                  <option value="aveo">Aveo</option>
+                                             </select>
+                                        </div>
+                                        <div class="col-md-6">
+                                             <label for="version" class="form-label">Versión*</label>
+                                             <select class="form-select" id="version" required>
+                                                  <option selected disabled>Selecciona una versión</option>
+                                                  <option value="base">Base</option>
+                                                  <option value="sport">Sport</option>
+                                                  <option value="premium">Premium</option>
+                                             </select>
+                                        </div>
+                                   </div>
+                         
+                                   <!-- Botón continuar -->
+                                   <div class="text-center mt-5">
+                                        <button class="btn btn-high px-4 py-2 btn-call-fixed btn-next" data-next="2" type="button" disabled>
+                                             CONTINUAR
+                                        </button>
+                                   </div>
+                              </form>
+                         
+                         </div>
+                         <div class="step step-2 d-none">
+                              <!-- Título -->
+                              <h2 class="text-form-header mb-2">Cotiza tu seguro</h2>
+                              <p class="date-autos  mb-3 mt-3"> Datos del conductor</p>
+                         
+                              <!-- Progreso -->
+                              <div class="progress-step-wrapper mx-auto">
+                                   <div class="progress mb-2 mt-3" style="height: 6px;">
+                                        <div class="progress-bar" role="progressbar" style="width: 50%; background-color: #000095;">
+                                        </div>
+                                   </div>
+                                   <p class="text-start mb-4 text-step mt-3">Paso 2 de 4</p>
+                              </div>
+                              <hr class="mb-4">
+                              <p class="text-forms-p">
+                                   Queremos conocerte para brindarte un seguro hecho a tu medida. Completa estos datos y
+                                   sigue avanzando sin complicaciones.
+                              </p>
+                         
+                              <div class="mb-3 small d-flex align-items-center">
+                                   <span class="material-symbols-rounded me-2"
+                                        style="font-size: 16px; color: #5E6A71; font-variation-settings: 'FILL' 1;">info</span>
+                                   <span class="text-muted">Campos con (*) son obligatorios.</span>
+                              </div>
+                         
+                              <!-- Formulario Paso 2 -->
+                              <form>
+                                   <!-- Género -->
+                                   <div class="mb-4">
+                                        <div class="form-check form-check-inline">
+                                             <input class="form-check-input" type="radio" name="genero" id="hombre" checked>
+                                             <label class="form-check-label" for="hombre">Hombre</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                             <input class="form-check-input" type="radio" name="genero" id="mujer">
+                                             <label class="form-check-label" for="mujer">Mujer</label>
+                                        </div>
+                                   </div>
+                         
+                                   <!-- Nombre, Apellido -->
+                                   <div class="row g-3 mb-3">
+                                        <div class="col-md-6">
+                                             <label for="nombre" class="form-label">Nombre(s)*</label>
+                                             <input type="text" class="form-control" id="nombre" placeholder="Nombre(s)" required>
+                                             <div class="invalid-feedback">Este campo es obligatorio</div>
+                                        </div>
+                                        <div class="col-md-6">
+                                             <label for="apellido1" class="form-label">Primer apellido*</label>
+                                             <input type="text" class="form-control" id="apellido1" placeholder="Primer apellido" required>
+                                             <div class="invalid-feedback">Este campo es obligatorio</div>
+                                        </div>
+                                   </div>
+                         
+                                   <div class="row g-3 mb-3">
+                                        <div class="col-md-6">
+                                             <label for="apellido2" class="form-label">Segundo apellido</label>
+                                             <input type="text" class="form-control" id="apellido2" placeholder="Segundo apellido (opcional)">
+                                        </div>
+                                        <div class="col-md-6">
+                                             <label class="form-label">Fecha de nacimiento*</label>
+                                             <div class="d-flex gap-2">
+                                                  <select class="form-select" id="dia" required>
+                                                       <option value="">Día</option>
+                                                       <option>12</option>
+                                                  </select>
+                                                  <select class="form-select" id="mes" required>
+                                                       <option value="">Mes</option>
+                                                       <option>Enero</option>
+                                                  </select>
+                                                  <select class="form-select" id="anio-nac" required>
+                                                       <option value="">Año</option>
+                                                       <option>2025</option>
+                                                  </select>
+                                             </div>
+                                             <div class="invalid-feedback">Este campo es obligatorio</div>
+                                        </div>
+                                   </div>
+                         
+                                   <!-- Correo, Teléfono -->
+                                   <div class="row g-3 mb-3">
+                                        <div class="col-md-6">
+                                             <label for="email" class="form-label">Correo electrónico*</label>
+                                             <input type="email" class="form-control" id="email" placeholder="Correo electrónico" required>
+                                             <div class="invalid-feedback">Este campo es obligatorio</div>
+                                        </div>
+                                        <div class="col-md-6">
+                                             <label for="telefono" class="form-label">Teléfono*</label>
+                                             <input type="tel" class="form-control" id="telefono" placeholder="10 dígitos" required>
+                                             <div class="invalid-feedback">Este campo es obligatorio</div>
+                                        </div>
+                                   </div>
+                         
+                                   <!-- Código postal y promoción -->
+                                   <div class="row g-3 mb-4">
+                                        <div class="col-md-6">
+                                             <label for="cp" class="form-label">Código postal*</label>
+                                             <input type="text" class="form-control" id="cp" placeholder="Código postal" required>
+                                             <div class="invalid-feedback">Este campo es obligatorio</div>
+                                        </div>
+                                        <div class="col-md-6">
+                                             <label for="promo" class="form-label d-flex justify-content-between align-items-center">
+                                                  <span>Código de promoción</span>
+                                                  <span class="material-symbols-outlined" role="button" tabindex="0" data-bs-toggle="modal"
+                                                       data-bs-target="#promoHelpModal" style="cursor: pointer; color:#5E6A71 ;">
+                                                       help
+                                                  </span>
+                                             </label>
+                         
+                         
+                                             <input type="text" class="form-control" id="promo" placeholder="Código de promoción (opcional)">
+                                        </div>
+                                   </div>
+                         
+                                   <!-- Legal -->
+                                   <p class="text-muted small mb-4">
+                                        Al dar clic en “Continuar” acepto que AXA Seguros, S.A. de C.V., con domicilio
+                                        en Avenida Félix Cuevas número 366, piso 3, Colonia Tlacoquemécatl, Alcaldía
+                                        Benito Juárez, C.P. 03200, Ciudad de México, llevará a cabo el tratamiento de
+                                        sus datos personales para obtención del beneficio/descuento, y todos los fines
+                                        vinculados con la relación jurídica/contractual que tengamos celebrado, o en su
+                                        caso, se vaya a celebrar con usted y demás finalidades previstas en el aviso de
+                                        privacidad integral, que puede consultar en axa.mx en la sección <a
+                                             href="https://axa.mx/aviso-de-privacidad" class="faq-link">Aviso de
+                                             Privacidad.</a>
+                                   </p>
+                         
+                                   <!-- Navegación -->
+                                   <div class="text-center">
+                                        <button class="btn btn-outline-dark btn-prev mb-3" type="button" data-prev="1">
+                                             <span class="material-symbols-rounded me-1">arrow_back</span> REGRESAR
+                                        </button>
+                                        <br>
+                                        <button class="btn btn-high px-4 py-2 btn-call-fixed btn-next" type="button" data-next="3" disabled>
+                                             CONTINUAR
+                                        </button>
+                                   </div>
+                         
+                              </form>
+                         
+                         </div>
+                         <div class="step step-3 d-none">
+                              <!-- Título -->
+                              <h2 class="text-form-header mb-2">Elige la protección ideal para ti</h2>
+                              <p class="date-autos  mb-3 mt-3"> Selecciona tu plan</p>
+                         
+                              <!-- Progreso -->
+                              <div class="progress-step-wrapper mx-auto">
+                                   <div class="progress mb-2 mt-3" style="height: 6px;">
+                                        <div class="progress-bar" role="progressbar" style="width: 75%; background-color: #000095;">
+                                        </div>
+                                   </div>
+                                   <p class="text-start mb-4 text-step mt-3">Paso 3 de 4</p>
+                              </div>
+                              <hr class="mb-4">
+                              <br>
+                              <div class="row gy-4 justify-content-center">
+                                   <!-- Card 1: Esencial -->
+                                   <div class="col-md-4">
+                         
+                                        <div class="card h-100 shadow-sm plan-card">
+                                             <div class="card-body text-start px-4">
+                                                  <h5 class="hed-text-step-4">Esencial</h5>
+                                                  <p class="text-body-card-4 ">La opción ideal para cumplir con los requisitos
+                                                       legales y circular con tranquilidad.</p>
+                                                  <button class="btn btn-plan w-100 mb-3 btn-next" data-next="4" type="button">CONTINUAR</button>
+                                                  <h6 class="text-body-card-4-2">¿Qué cubre tu seguro?</h6>
+                                                  <div class="d-flex justify-content-between">
+                                                       <p class="first-text-04">Robo total</p>
+                                                       <p class="second-text-04">Deducible: 10%</p>
+                                                  </div>
+                                                  <div class="d-flex justify-content-between">
+                                                       <p class="first-text-04">Defensa legal</p>
+                                                       <p class="second-text-04"></p>
+                                                  </div>
+                                                  <div class="d-flex justify-content-between">
+                                                       <p class="first-text-04">Servicios de asistencia</p>
+                                                       <p class="second-text-04"></p>
+                                                  </div>
+                                                  <div class="d-flex justify-content-between">
+                                                       <p class="first-text-04">Responsabilidad civil de personas</p>
+                                                       <p class="second-text-04"></p>
+                                                  </div>
+                                                  <div class="d-flex justify-content-between">
+                                                       <p class="first-text-04">Gastos médicos a ocupantes </p>
+                                                       <p class="second-text-04"></p>
+                                                  </div>
+                         
+                                                  <div class="text-center mt-4">
+                                                       <button class="btn btn-outline-dark btn-mod" type="button" data-bs-toggle="modal"
+                                                            data-bs-target="#modalDetalleEsencial">
+                                                            VER MÁS
+                                                       </button>
+                                                  </div>
+                                             </div>
+                                        </div>
+                                   </div>
+                         
+                                   <!-- Card 2: Amplia (destacada) -->
+                                   <div class="col-md-4 position-relative card-mobile-gap">
+                                        <div class="best-seller-badge text-center fw-bold text-white">Más vendido</div>
+                                        <div class="card h-100 plan-card border bg-gradient-plan ">
+                         
+                                             <div class="card-body text-start px-4">
+                                                  <h5 class="hed-text-step-4">Amplia</h5>
+                                                  <p class="text-body-card-4 ">Protección ante accidentes, robo y daños a terceros,
+                                                       para que manejes sin preocupaciones.</p>
+                                                  <button class="btn btn-plan w-100 mb-3 btn-next" data-next="4" type="button">CONTINUAR</button>
+                         
+                         
+                                                  <h6 class="text-body-card-4-2">¿Qué cubre tu seguro?</h6>
+                                                  <div class="d-flex justify-content-between">
+                                                       <p class="first-text-04">Robo total</p>
+                                                       <p class="second-text-04">Deducible: 10%</p>
+                                                  </div>
+                                                  <div class="d-flex justify-content-between">
+                                                       <p class="first-text-04">Daños materiales</p>
+                                                       <p class="second-text-04">Deducible 5%</p>
+                                                  </div>
+                                                  <div class="d-flex justify-content-between">
+                                                       <p class="first-text-04">Cristales</p>
+                                                       <p class="second-text-04">Deducible 20%</p>
+                                                  </div>
+                                                  <div class="d-flex justify-content-between">
+                                                       <p class="first-text-04">Responsabilidad civil en el extranjero</p>
+                                                       <p class="second-text-04"></p>
+                                                  </div>
+                                                  <div class="d-flex justify-content-between">
+                                                       <p class="first-text-04">Gastos médicos a ocupantes </p>
+                                                       <p class="second-text-04"></p>
+                                                  </div>
+                         
+                                                  <div class="text-center mt-4">
+                                                       <button class="btn btn-outline-dark btn-mod" type="button" data-bs-toggle="modal"
+                                                            data-bs-target="#modalDetalleEsencial">
+                                                            VER MÁS
+                                                       </button>
+                                                  </div>
+                                             </div>
+                                        </div>
+                                   </div>
+                         
+                         
+                                   <!-- Card 3: Amplia Plus -->
+                                   <div class="col-md-4">
+                                        <div class="card h-100 shadow-sm plan-card">
+                                             <div class="card-body text-start px-4">
+                                                  <h5 class="hed-text-step-4">Amplia Plus</h5>
+                                                  <p class="text-body-card-4">El respaldo más completo, con beneficios exclusivos y
+                                                       asistencia en cada momento.</p>
+                                                  <button class="btn btn-plan w-100 mb-3 btn-next" data-next="4" type="button">CONTINUAR</button>
+                         
+                                                  <h6 class="text-body-card-4-2">¿Qué cubre tu seguro?</h6>
+                                                  <div class="d-flex justify-content-between">
+                                                       <p class="first-text-04">Robo total</p>
+                                                       <p class="second-text-04">Deducible 5%</p>
+                                                  </div>
+                                                  <div class="d-flex justify-content-between">
+                                                       <p class="first-text-04">Daños materiales</p>
+                                                       <p class="second-text-04">Deducible 3%</p>
+                                                  </div>
+                                                  <div class="d-flex justify-content-between">
+                                                       <p class="first-text-04">Cristales</p>
+                                                       <p class="second-text-04">Deducible 20%</p>
+                                                  </div>
+                                                  <div class="d-flex justify-content-between">
+                                                       <p class="first-text-04">Responsabilidad civil en el extranjero</p>
+                                                       <p class="second-text-04">Deducible 25%</p>
+                                                  </div>
+                                                  <div class="d-flex justify-content-between">
+                                                       <p class="first-text-04">Gastos médicos a ocupantes </p>
+                                                       <p class="second-text-04"></p>
+                                                  </div>
+                         
+                                                  <div class="text-center mt-4">
+                                                       <button class="btn btn-outline-dark btn-mod" type="button" data-bs-toggle="modal"
+                                                            data-bs-target="#modalDetalleEsencial">
+                                                            VER MÁS
+                                                       </button>
+                                                  </div>
+                         
+                         
+                                             </div>
+                                        </div>
+                                   </div>
+                         
+                              </div>
+                         
+                         
+                              <!-- Botón regresar -->
+                              <div class="text-center mt-4">
+                                   <button class="btn btn-outline-dark btn-prev mt-3" type="button" data-prev="2">
+                                        <span class="material-symbols-outlined me-1">arrow_back</span> REGRESAR
+                                   </button>
+                              </div>
+                         </div>
+                         <div class="step step-4 d-none">
+                              <!-- Contenido dividido -->
+                              <div class="row gy-4">
+                                   <!-- Formulario de confirmación -->
+                                   <div class="col-md-8">
+                                        <!-- Título -->
+                                        <h2 class="text-form-header mb-2">Último paso para tu protección</h2>
+                                        <p class="date-autos mb-3 mt-3">Confirma tu información</p>
+                         
+                                        <!-- Progreso -->
+                                        <div class="progress-step-wrapper mx-auto">
+                                             <div class="progress mb-2 mt-3" style="height: 6px;">
+                                                  <div class="progress-bar" role="progressbar" style="width: 100%; background-color: #000095;">
+                                                  </div>
+                                             </div>
+                                             <p class="text-start mb-4 text-step mt-3">Paso 4 de 4</p>
+                                        </div>
+                         
+                                        <hr class="mb-4">
+                                        <p class="text-forms-p mb-4">Asegúrate de que los datos son correctos.</p>
+                                        <div class="mb-3 small d-flex align-items-center">
+                                             <span class="material-symbols-rounded me-2"
+                                                  style="font-size: 16px; color: #5E6A71; font-variation-settings: 'FILL' 1;">info</span>
+                                             <span class="text-muted">Campos con (*) son obligatorios.</span>
+                                        </div>
+                         
+                                        <form>
+                                             <div class="row g-3 mb-3">
+                                               <div class="col-md-6">
+                                                 <label for="nombreConfirm" class="form-label">Nombre(s)*</label>
+                                                 <input type="text" class="form-control" id="nombreConfirm" value="Antonio" disabled>
+                                               </div>
+                                               <div class="col-md-6">
+                                                 <label for="apellidoConfirm" class="form-label">Primer apellido*</label>
+                                                 <input type="text" class="form-control" id="apellidoConfirm" value="Gonzáles" disabled>
+                                               </div>
+                                             </div>
+                                           
+                                             <div class="row g-3 mb-3">
+                                               <div class="col-md-6">
+                                                 <label for="emailConfirm" class="form-label">Correo electrónico*</label>
+                                                 <input type="email" class="form-control" id="emailConfirm" value="antonio.gonzales@testmail.com" disabled>
+                                               </div>
+                                               <div class="col-md-6">
+                                                 <label for="emailConfirm2" class="form-label">Confirmar correo electrónico*</label>
+                                                 <input type="email" class="form-control" id="emailConfirm2" required placeholder="Confirma tu correo"
+                                                   oninput="validateEmailMatch()" onblur="validateEmailMatch()">
+                                                 <div class="invalid-feedback">Este campo es obligatorio o no coincide con el correo.</div>
+                                               </div>
+                                             </div>
+                                           
+                                             <div class="text-center mt-4">
+                                               <button class="btn btn-high btn-responsive py-3 mt-3" type="submit" id="btnEnviar" disabled>ENVIAR</button>
+                                             </div>
+                                           </form>
+                                           
+                                   </div>
+                         
+                                   <!-- Detalles de tu seguro -->
+                                   <div class="col-md-4">
+                                        <div class="card border-0 rounded-3 px-4 py-4">
+                                             <h5 class="detalles-sec mb-3">Detalles de tu seguro</h5>
+                         
+                                             <!-- Datos del vehículo -->
+                                             <div class="d-flex justify-content-between align-items-center">
+                                                  <p class="main-text-05 no-margin"><strong>Datos del vehículo:</strong></p>
+                                                  <p class="second-text-04"><button class="btn p-0 border-0 bg-transparent" data-prev="1">
+                                                            <img src="assets/resources/icon-edit.svg" alt="Editar"
+                                                                 style="width: 18px; height: 18px;">
+                                                       </button>
+                                                  </p>
+                                             </div>
+                                             <div class="d-flex justify-content-between">
+                                                  <p class="first-text-04">Marca:</p>
+                                                  <p class="second-text-04">Chevrolet</p>
+                                             </div>
+                                             <div class="d-flex justify-content-between">
+                                                  <p class="first-text-04">Año:</p>
+                                                  <p class="second-text-04">2025</p>
+                                             </div>
+                                             <div class="d-flex justify-content-between">
+                                                  <p class="first-text-04">Modelo:</p>
+                                                  <p class="second-text-04">Trax LT</p>
+                                             </div>
+                                             <br>
+                                             <!-- Cobertura: -->
+                                             <div class="d-flex justify-content-between align-items-center">
+                                                  <p class="main-text-05 no-margin"><strong>Cobertura:</strong></p>
+                                                  <p class="second-text-04"><button class="btn p-0 border-0 bg-transparent" data-prev="1">
+                                                            <img src="assets/resources/icon-edit.svg" alt="Editar"
+                                                                 style="width: 18px; height: 18px;">
+                                                       </button>
+                                                  </p>
+                                             </div>
+                                             <div class="d-flex justify-content-between">
+                                                  <p class="first-text-04">Tipo:</p>
+                                                  <p class="second-text-04">Amplia Plus</p>
+                                             </div>
+                                             <br>
+                                             <!-- Datos personales: -->
+                                             <div class="d-flex justify-content-between align-items-center">
+                                                  <p class="main-text-05 no-margin"><strong>Datos personales:</strong></p>
+                                                  <p class="second-text-04"><button class="btn p-0 border-0 bg-transparent" data-prev="1">
+                                                            <img src="assets/resources/icon-edit.svg" alt="Editar"
+                                                                 style="width: 18px; height: 18px;">
+                                                       </button>
+                                                  </p>
+                                             </div>
+                                             <div class="d-flex justify-content-between">
+                                                  <p class="first-text-04">Nombre</p>
+                                                  <p class="second-text-04">Antonio Gonzáles</p>
+                                             </div>
+                                             <div class="d-flex justify-content-between">
+                                                  <p class="first-text-04">Sexo:</p>
+                                                  <p class="second-text-04">Masculino</p>
+                                             </div>
+                                             <div class="d-flex justify-content-between">
+                                                  <p class="first-text-04">Fecha de nacimiento:</p>
+                                                  <p class="second-text-04">05/09/1993</p>
+                                             </div>
+                                             <div class="d-flex justify-content-between">
+                                                  <p class="first-text-04">Teléfono:</p>
+                                                  <p class="second-text-04">5512345678</p>
+                                             </div>
+                                             <div class="d-flex justify-content-between">
+                                                  <p class="first-text-04">Código postal:</p>
+                                                  <p class="second-text-04">90000</p>
+                                             </div>
+                                             <div class="d-flex justify-content-between">
+                                                  <p class="first-text-04">Colonia</p>
+                                                  <p class="second-text-04">1111</p>
+                                             </div>
+                         
+                         
+                                        </div>
+                                   </div>
+                              </div>
+                         </div>
+                            
+                    </div>
+               </div>
+          </section>
+
+
+          <div class="modal fade" id="promoHelpModal" tabindex="-1" aria-hidden="true">
+               <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content border-0 rounded-3" style="border-bottom: 4px solid #000095;">
+                         <div class="modal-header border-0">
+                              <button type="button" class="btn p-0 ms-auto" data-bs-dismiss="modal" aria-label="Cerrar">
+                                   <img src="assets/resources/icon-close.svg" alt="Cerrar" width="32" height="32">
+                              </button>
+                         </div>
+                         <div class="modal-body text-center">
+                              <h4 class="modal-text-h4 mb-4">¡Aprovecha 10% de descuento!</h4>
+
+                              <p class="body-text-modal ">¡Aprovecha 10% de descuento! Ingresa el código <strong
+                                        style="color:#000095">PROMOAXA10</strong></p>
+
+                              <hr class="my-4">
+
+                              <p class="body-text-modal ">¡Hasta 15% de descuento en tu seguro de auto híbrido o
+                                   eléctrico!<br>
+                                   Ingresa el código <strong style="color:#000095">ECOAXA15</strong>
+                              </p>
+                         </div>
+                    </div>
+               </div>
+          </div>
+
+          <div class="modal fade" id="modalDetalleEsencial" tabindex="-1" aria-hidden="true">
+               <div class="modal-dialog modal-dialog-centered">
+                 <div class="modal-content border-0 rounded-3" style="border-bottom: 4px solid #000095;">
+                   <div class="modal-header border-0">
+                     <button type="button" class="btn p-0 ms-auto" data-bs-dismiss="modal" aria-label="Cerrar">
+                       <img src="assets/resources/icon-close.svg" alt="Cerrar" width="32" height="32">
+                     </button>
+                   </div>
+                   <div class="modal-body text-start px-4 py-4">
+                     <h6 class="fw-bold">Robo total</h6>
+                     <p>Ampara el robo total del vehículo o los daños materiales por intento de robo.<br>
+                       <span class="fw-bold" style="color: #000095;">Deducible variable 5% sobre valor comercial</span>
+                     </p>
+             
+                     <h6 class="fw-bold mt-3">Defensa legal</h6>
+                     <p>Servicio legal con abogados las 24 horas, los 365 días del año, desde el momento que el asegurado se presenta en el Ministerio Público hasta la conclusión del asunto penal.</p>
+             
+                     <h6 class="fw-bold mt-3">Servicios de asistencia</h6>
+                     <p>Asistencia automovilística, médica y administrativa cuando se presente una avería en el vehículo asegurado, un accidente personal o alguna enfermedad.</p>
+             
+                     <h6 class="fw-bold mt-3">Responsabilidad civil de personas</h6>
+                     <p>Ampara la responsabilidad civil del asegurado frente a terceros por lesiones corporales o la muerte a consecuencia del uso del vehículo asegurado.</p>
+             
+                     <h6 class="fw-bold mt-3">Gastos médicos a ocupantes</h6>
+                     <p>Ampara el pago de gastos médicos por hospitalización, medicinas, atención médica, enfermeras, servicio de ambulancia y gastos de entierro originados por lesiones que sufra el asegurado o cualquier ocupante del vehículo en accidentes de tránsito o como resultado del robo total del vehículo.</p>
+                   </div>
+                 </div>
+               </div>
+             </div>
+             
+
+
+
+     </main>
+
+     <footer class="footer-legal-2 py-4">
+          <div class="container">
+               <p class="footer-text m-0">
+                    “Aplican restricciones. Los productos se rigen por los términos y condiciones contratados. Consulta
+                    detalles de coberturas, exclusiones y requisitos de contratación en
+                    <a href="https://axa.mx/" target="_blank" class="footer-link">axa.mx.</a>
+                    AXA Seguros S.A. de C.V. con domicilio en Félix Cuevas número 366, piso 3, Colonia Tlacoquemécatl,
+                    Alcaldía Benito Juárez, C.P. 03200, en la Ciudad de México, le informa que sus datos personales
+                    serán
+                    tratados únicamente para los fines de la relación jurídica. Conoce nuestro
+                    <a href="https://axa.mx/aviso-de-privacidad" target="_blank" class="footer-link">Aviso de
+                         Privacidad.”</a>
+               </p>
+          </div>
+     </footer>
+
+     <script src="js/bootstrap.min.js"></script>
+     <script src="js/validate-forms.js"></script>
+     <script src="js/step-forms.js"></script>
+     <!-- escoger id 
+     <script>
+          document.addEventListener('DOMContentLoaded', function () {
+               const targetStep = 4;
+
+               // Sobreescribe el paso después de que el original ya se haya ejecutado
+               setTimeout(() => {
+                    const steps = document.querySelectorAll('.step');
+                    const progressBar = document.querySelector('.progress-bar');
+                    const stepText = document.querySelector('.progress-step-wrapper p');
+
+                    steps.forEach((step, index) => {
+                         step.classList.toggle('d-none', index !== targetStep - 1);
+                    });
+
+                    if (progressBar) {
+                         const percent = (targetStep / steps.length) * 100;
+                         progressBar.style.width = `${percent}%`;
+                         progressBar.style.backgroundColor = '#000095';
+                    }
+
+                    if (stepText) {
+                         stepText.textContent = `Paso ${targetStep} de ${steps.length}`;
+                    }
+               }, 100); 
+          });
+     </script>
+
+     -->
+     
+
+</body>
+
+</html>
