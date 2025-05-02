@@ -702,6 +702,7 @@ nav.shadow-custom {
 }
 
 
+/* DESKTOP: comportamiento actual, no tocar */
 @media (min-width: 992px) {
   .scroll-visible-desktop {
     display: none;
@@ -714,6 +715,26 @@ nav.shadow-custom {
   .bottom-navigation.show-on-scroll {
     display: flex !important;
     justify-content: center;
+  }
+}
+
+/* ✅ MOBILE: que siempre se vean sin esperar scroll */
+@media (max-width: 991px) {
+  .float-button-expand,
+  .bottom-navigation {
+    display: flex !important;        /* o inline-grid según tu diseño */
+    opacity: 1 !important;
+    transform: none !important;
+    pointer-events: auto !important;
+    visibility: visible !important;
+  }
+
+  .scroll-visible-desktop {
+    display: flex !important;
+    opacity: 1 !important;
+    transform: none !important;
+    pointer-events: auto !important;
+    visibility: visible !important;
   }
 }
 
@@ -1103,3 +1124,5 @@ nav.shadow-custom {
   background-color: #000095;
   color: #fff;
 }
+
+
