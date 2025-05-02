@@ -1126,3 +1126,8 @@ nav.shadow-custom {
 }
 
 
+@media (max-width: 767.98px) {
+  .pb-mobile-32 {
+    padding-bottom: 32px;
+  }
+}
