@@ -1079,3 +1079,12 @@ nav.shadow-custom {
   text-align: left; 
   margin-bottom: 32px;
 }
+
+
+.body-grey {
+  background-color: #EEEEEE !important;
+}
+
+.section-white {
+  background-color: #ffffff !important;
+}
