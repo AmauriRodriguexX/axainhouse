@@ -36,7 +36,7 @@ textarea {
 /* === TITULARES CON PUBLICO === */
 h1 {
   font-family: 'Publico-Bold', serif;
-  font-size: 48px;
+  font-size: 42px;
   font-weight: 800;
   margin-bottom: 48px;
 }
@@ -323,19 +323,19 @@ nav.shadow-custom {
 
 @media (min-width: 1024px) {
   .desktop-hight {
-    min-height: 500px;
+    height: 70vh;
   }
 }
 
 
 @media (max-width: 600px) {
   .py-5 {
-    padding-bottom: 3rem !important;
+    padding-bottom: 0rem !important;
   }
 }
 
 .text-header {
-  font-size: 36px;
+  font-size: 42px;
   font-weight: 800;
   color: #ffffff;
   text-align: left;
