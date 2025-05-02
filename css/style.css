@@ -1088,3 +1088,18 @@ nav.shadow-custom {
 .section-white {
   background-color: #ffffff !important;
 }
+
+/* Estado por defecto (inactivo o deshabilitado) */
+.custom-prev,
+.custom-next {
+  background-color: #E2DFDF;
+  color: #4a4a4a;
+  transition: all 0.3s ease;
+}
+
+/* Estado activo (cuando NO está deshabilitado) */
+.custom-prev:not(.swiper-button-disabled),
+.custom-next:not(.swiper-button-disabled) {
+  background-color: #000095;
+  color: #fff;
+}
