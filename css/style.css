@@ -38,7 +38,7 @@ h1 {
   font-family: 'Publico-Bold', serif;
   font-size: 42px;
   font-weight: 800;
-  margin-bottom: 48px;
+  margin-bottom: 32px;
 }
 
 
@@ -48,6 +48,17 @@ h1 {
     margin-bottom: 24px;
   }
 }
+
+@media (min-width: 768px) {
+  .color-h1-deskt {
+    color: #333 !important;
+  }
+
+  .color-p-deskt {
+    color: #333333 !important;
+  }
+}
+
 
 h2,
 h3 {
@@ -296,11 +307,17 @@ nav.shadow-custom {
 
 @media (min-width: 768px) {
   .cotiza-section {
-    background: url('../assets/resources/cotiza-tu-seguro-de-auto.jpg') no-repeat center center;
+    background-image: 
+      linear-gradient(90deg, white calc(50% - 600px), white calc(50% - 300px), rgba(255, 255, 255, 0) 100%),
+      url(../assets/resources/cotiza-tu-seguro-de-auto.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
     background-size: cover;
     color: white;
   }
 }
+
+
 
 @media (max-width: 767px) {
   .cotiza-section::after {
@@ -342,10 +359,10 @@ nav.shadow-custom {
 }
 
 .text-subtitle {
-  font-size: 22px;
-  font-weight: 300;
-  color: #ffffff;
-  text-align: left;
+  font-style: normal;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: normal;
   
 }
 
